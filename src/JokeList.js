@@ -82,6 +82,7 @@ class JokeList extends Component {
         </div>
       );
     }
+    // let jokes = this.state.jokes.sort((a, b) => b.votes - a.votes);
     return (
       <div className="JokeList">
         <div className="JokeList-sidebar">
@@ -89,8 +90,8 @@ class JokeList extends Component {
             <span>Dad</span> Jokes
           </h1>
           <img className="lughedEmo" src={emoPink} alt="emoji" />
-          <button className="buttonMore" onClick={this.getNewJokes}>
-            New Jokes{" "}
+          <button className="JokeList-buttonMore" onClick={this.getNewJokes}>
+            Fetch Jokes{" "}
           </button>
         </div>
         <div className="JokeList-jokes">
